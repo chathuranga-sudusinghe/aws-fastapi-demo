@@ -1,7 +1,13 @@
 .venv/
 __pycache__/
+**/__pycache__/
 *.pyc
 .env
+.aws/
+*.pem
+*.key
+awscliv2.zip
+aws/
 .DS_Store
 .vscode/
 model-info.json
