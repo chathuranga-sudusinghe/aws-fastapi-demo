@@ -8,8 +8,12 @@ from pydantic import BaseModel
 
 
 app = FastAPI(
-    title="AWS FastAPI Learning API",
-    version="1.1.0",
+    title="AWS Cloud Deployment and Observability API",
+    description=(
+        "A FastAPI demonstration of containerized AWS deployment, IAM-based "
+        "Amazon S3 access, health monitoring, and observability."
+    ),
+    version="2.0.0",
 )
 
 
@@ -31,7 +35,7 @@ class PredictionRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Hello from AWS FastAPI"}
+    return {"message": "AWS Cloud Deployment and Observability API"}
 
 
 @app.get("/health")
